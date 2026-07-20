@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZenTask - Premium Themeable To-Do Web App</title>
+  <meta name="description" content="A gorgeous, customizable To-Do list app with multiple yellow & orange themes, custom wallpapers, task priority management, category tags, progress tracking, and local backup." />
+
+  <!-- Linking my CSS file -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="theme-sunset wp-midnight">
+
+  <div class="todo-container" id="todoContainer">
+    <!-- Customize Theme & Wallpaper Trigger -->
+    <button class="customize-trigger" id="settingsToggle" title="Customize Themes & Wallpapers" aria-label="Customize Theme">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="3"></circle>
+        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+      </svg>
+    </button>
+
+    <h1>ZenTask</h1>
+    <div class="subtitle">
+      <h3><b>Design your day in one click automatically shape your future</b></h3>
+    </div>
+
+    <!-- ===================== THEME & WALLPAPER PANEL ===================== -->
+    <div class="settings-panel" id="settingsPanel">
+      <div class="setting-group">
+        <span class="setting-title">Select Theme Accent</span>
+        <div class="theme-options">
+          <div class="theme-pill selected" data-theme="sunset" id="themeSunset">
+            <span class="dot"></span>Sunset Glow
+          </div>
+          <div class="theme-pill" data-theme="honey" id="themeHoney">
+            <span class="dot"></span>Honey Yellow
+          </div>
+          <div class="theme-pill" data-theme="creamsicle" id="themeCreamsicle">
+            <span class="dot"></span>Creamsicle
+          </div>
+          <div class="theme-pill" data-theme="cyber" id="themeCyber">
+            <span class="dot"></span>Cyber Amber
+          </div>
+        </div>
+      </div>
+      <div class="setting-group">
+        <span class="setting-title">Select Wallpaper Background</span>
+        <div class="wp-options">
+          <div class="wp-pill selected" data-wp="midnight" id="wpMidnight">Midnight Flame</div>
+          <div class="wp-pill" data-wp="sunset" id="wpSunset">Golden Hour</div>
+          <div class="wp-pill" data-wp="aurora" id="wpAurora">Solar Wind</div>
+          <div class="wp-pill" data-wp="minimalist" id="wpMinimalist">Minimalist Gray</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== TASK PROGRESS BAR ===================== -->
+    <div class="progress-container">
+      <div class="progress-header">
+        <span>Completion Progress</span>
+        <span id="progressPercent">0%</span>
+      </div>
+      <div class="progress-track">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+    </div>
+
+    <!-- ===================== INPUT AREA ===================== -->
+    <!-- User types a task here and clicks the Add button (or presses Enter) -->
+    <div class="input-area">
+      <div class="input-main-row">
+        <input type="text" id="taskInput" placeholder="Enter a new task..." />
+        <button id="addBtn">Add Task</button>
+      </div>
+      <div class="input-meta-row">
+        <div class="select-wrapper">
+          <select id="taskPriority" aria-label="Select Task Priority">
+            <option value="low">Low Priority</option>
+            <option value="medium" selected>Medium Priority</option>
+            <option value="high">High Priority</option>
+          </select>
+        </div>
+        <div class="select-wrapper">
+          <select id="taskCategory" aria-label="Select Task Category">
+            <option value="Personal">Personal</option>
+            <option value="Work">Work</option>
+            <option value="Shopping">Shopping</option>
+            <option value="Goals">Goals</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Small message shown if the input is empty when trying to add -->
+    <p class="error-message" id="errorMsg"></p>
+
+    <!-- ===================== FILTER BUTTONS ===================== -->
+    <!-- These let the user view All / Active / Completed tasks -->
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all" id="filterAll">All</button>
+      <button class="filter-btn" data-filter="active" id="filterActive">Active</button>
+      <button class="filter-btn" data-filter="completed" id="filterCompleted">Completed</button>
+    </div>
+
+    <!-- ===================== TASK LIST ===================== -->
+    <!-- JavaScript will fill this list with <li> items dynamically -->
+    <ul id="taskList" class="task-list"></ul>
+
+    <!-- Shown when there are no tasks to display -->
+    <p class="empty-message" id="emptyMsg">No tasks yet. Design your day above!</p>
+
+    <!-- ===================== FOOTER INFO ===================== -->
+    <div class="list-footer">
+      <span id="taskCount">0 tasks left</span>
+      <button id="clearCompletedBtn">Clear Completed</button>
+    </div>
+  </div>
+
+  <!-- ===================== DATA BACKUP (GITHUB PREP) ===================== -->
+  <div class="backup-section">
+    <span>Backup Data</span>
+    <div class="backup-actions">
+      <button id="exportBtn" class="backup-btn">Export JSON</button>
+      <button id="importBtn" class="backup-btn">Import JSON</button>
+      <input type="file" id="importFile" accept=".json" style="display: none;" />
+    </div>
+  </div>
+
+  <!-- Linking my JavaScript file at the bottom so HTML loads first -->
+  <script src="script.js"></script>
+</body>
+
+</html>
