@@ -1,4 +1,4 @@
-# 🌟 ZenTask - Premium Themeable To-Do Web App
+#  ZenTask - Premium Themeable To-Do Web App
 
 ZenTask is a modern, high-fidelity, and feature-rich To-Do web application. Designed with elegant glassmorphism aesthetics, fluid gradient backgrounds, and an interactive theme engine specializing in curated, harmonious **yellow and orange** accents.
 
@@ -6,7 +6,7 @@ ZenTask is designed for developers and power-users who want an organized, attrac
 
 ---
 
-## ✨ Key Features
+##  Key Features
 
 - **🎨 Multi-Accent Themes**: Switch instantly between carefully chosen visual palettes:
   - **Sunset Glow (Default)**: Deep charcoal dark mode with glowing orange accents.
@@ -28,7 +28,7 @@ ZenTask is designed for developers and power-users who want an organized, attrac
 
 ---
 
-## 🛠️ Technology Stack
+##  Technology Stack
 
 - **Structure**: Semantic HTML5 (SEO friendly)
 - **Styling**: Vanilla CSS3 Custom Properties (CSS variables) for real-time dynamic styling, Google Font integration (Plus Jakarta Sans)
@@ -37,7 +37,7 @@ ZenTask is designed for developers and power-users who want an organized, attrac
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 1. Clone or download this repository.
    ```bash
@@ -51,7 +51,7 @@ ZenTask is designed for developers and power-users who want an organized, attrac
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 todo-list-website/
@@ -64,7 +64,7 @@ todo-list-website/
 
 ---
 
-## 🖼️ Preview the Aesthetics
+##  Preview the Aesthetics
 
 - **Themes**: Click the ⚙️ icon in the top right to customize your workspace accent and wallpaper.
 - **Progress**: Complete tasks to see the amber/orange gradient fill the progress track.
@@ -75,3 +75,9 @@ todo-list-website/
 Enjoy designing your day and shaping your future! 🚀
 "My_To-Do_list"
 "A simple website created by me as a learner"
+## Screenshot of project
+'''
+here i m uploding
+it at good quality 
+j
+'''
