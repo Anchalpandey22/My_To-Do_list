@@ -132,9 +132,17 @@ body.wp-minimalist {
 }
 
 @keyframes gradientFlow {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /* =========================================================
@@ -235,13 +243,15 @@ h1 {
   color: var(--text-muted);
 }
 
-.theme-options, .wp-options {
+.theme-options,
+.wp-options {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
 
-.theme-pill, .wp-pill {
+.theme-pill,
+.wp-pill {
   padding: 6px 14px;
   border-radius: 20px;
   font-size: 12px;
@@ -256,11 +266,13 @@ h1 {
   user-select: none;
 }
 
-.theme-pill:hover, .wp-pill:hover {
+.theme-pill:hover,
+.wp-pill:hover {
   border-color: var(--primary);
 }
 
-.theme-pill.selected, .wp-pill.selected {
+.theme-pill.selected,
+.wp-pill.selected {
   background-color: var(--primary);
   color: #fff;
   border-color: var(--primary);
@@ -273,10 +285,21 @@ h1 {
   border-radius: 50%;
 }
 
-.theme-honey .dot { background-color: #f59e0b; }
-.theme-creamsicle .dot { background-color: #f97316; }
-.theme-cyber .dot { background-color: #fbbf24; }
-.theme-sunset .dot { background-color: #ea580c; }
+.theme-honey .dot {
+  background-color: #f59e0b;
+}
+
+.theme-creamsicle .dot {
+  background-color: #f97316;
+}
+
+.theme-cyber .dot {
+  background-color: #fbbf24;
+}
+
+.theme-sunset .dot {
+  background-color: #ea580c;
+}
 
 /* =========================================================
    TASK PROGRESS BAR
@@ -714,6 +737,7 @@ h1 {
     opacity: 0;
     transform: translateY(12px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -725,6 +749,7 @@ h1 {
     opacity: 1;
     transform: scale(1);
   }
+
   to {
     opacity: 0;
     transform: scale(0.92);
@@ -738,7 +763,7 @@ h1 {
   body {
     padding: 20px 10px;
   }
-  
+
   .todo-container {
     padding: 25px 20px;
     border-radius: 20px;
