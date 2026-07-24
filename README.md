@@ -1,4 +1,4 @@
-# 🌟 ZenTask - Premium Themeable To-Do Web App
+# ZenTask - Premium Themeable To-Do Web App
 
 ZenTask is a modern, high-fidelity, and feature-rich To-Do web application. Designed with elegant glassmorphism aesthetics, fluid gradient backgrounds, and an interactive theme engine specializing in curated, harmonious **yellow and orange** accents.
 
@@ -6,29 +6,29 @@ ZenTask is designed for developers and power-users who want an organized, attrac
 
 ---
 
-## ✨ Key Features
+##  Key Features
 
-- **🎨 Multi-Accent Themes**: Switch instantly between carefully chosen visual palettes:
+- ** Multi-Accent Themes**: Switch instantly between carefully chosen visual palettes:
   - **Sunset Glow (Default)**: Deep charcoal dark mode with glowing orange accents.
   - **Honey Yellow**: Clean light mode featuring soft amber accents.
   - **Creamsicle**: Warm, creamy theme with bright orange and soft-peach hues.
   - **Cyber Amber**: High-contrast cyberpunk styling with neon gold accents.
-- **🖼️ Dynamic Wallpapers**: Instantly transition between fluid gradient environments:
+- ** Dynamic Wallpapers**: Instantly transition between fluid gradient environments:
   - *Midnight Flame* (Deep purple & ember gradient)
   - *Golden Hour* (Radiant orange to soft pink gradient)
   - *Solar Wind* (Bright sunny orange gradient)
   - *Minimalist Gray* (Distraction-free, clean neutral background)
-- **📊 Real-time Progress Tracking**: Watch your completion percentage dynamically animate as you add, toggle, or clear tasks.
-- **🏷️ Multi-Option Metadata**: Categorize tasks and prioritize them to sort your day efficiently:
+- ** Real-time Progress Tracking**: Watch your completion percentage dynamically animate as you add, toggle, or clear tasks.
+- ** Multi-Option Metadata**: Categorize tasks and prioritize them to sort your day efficiently:
   - **Priorities**: Low, Medium, High (Color-coded indicators).
   - **Categories**: Personal, Work, Shopping, Goals.
-- **✏️ Inline Double-Click Editing**: Simply double-click any task name to change its description on the fly, or click the action edit button.
-- **💾 Local Persistence**: Themes, wallpapers, and task items automatically persist inside `localStorage`.
-- **📤 Local JSON Backup**: Export tasks into a clean JSON file and import them back on any device.
+- **Inline Double-Click Editing**: Simply double-click any task name to change its description on the fly, or click the action edit button.
+- ** Local Persistence**: Themes, wallpapers, and task items automatically persist inside `localStorage`.
+- ** Local JSON Backup**: Export tasks into a clean JSON file and import them back on any device.
 
 ---
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 - **Structure**: Semantic HTML5 (SEO friendly)
 - **Styling**: Vanilla CSS3 Custom Properties (CSS variables) for real-time dynamic styling, Google Font integration (Plus Jakarta Sans)
@@ -37,7 +37,7 @@ ZenTask is designed for developers and power-users who want an organized, attrac
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 1. Clone or download this repository.
    ```bash
@@ -51,7 +51,7 @@ ZenTask is designed for developers and power-users who want an organized, attrac
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 todo-list-website/
@@ -64,7 +64,7 @@ todo-list-website/
 
 ---
 
-## 🖼️ Preview the Aesthetics
+##  Preview the Aesthetics
 
 - **Themes**: Click the  icon in the top right to customize your workspace accent and wallpaper.
 - **Progress**: Complete tasks to see the amber/orange gradient fill the progress track.
@@ -82,4 +82,4 @@ todo-list-website/
 
 
 
-Enjoy designing your day and shaping your future! 🚀
+Enjoy designing your day and shaping your future! 
