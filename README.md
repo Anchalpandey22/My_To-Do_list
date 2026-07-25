@@ -5,7 +5,7 @@ ZenTask is a modern, high-fidelity, and feature-rich To-Do web application. Desi
 ZenTask is designed for developers and power-users who want an organized, attractive dashboard to shape their day and track long-term progress.
 
 ---
-
+ 
 ##  Key Features 
 
 - ** Multi-Accent Themes**: Switch instantly between carefully chosen visual palettes:
