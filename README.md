@@ -1,4 +1,4 @@
-# ZenTask -  To-Do Web App
+# ZenTask - To-Do Web App
 
 ZenTask is a modern, high-fidelity, and feature-rich To-Do web application. Designed with elegant glassmorphism aesthetics, fluid gradient backgrounds, and an interactive theme engine specializing in curated, harmonious **yellow and orange** accents.
 
