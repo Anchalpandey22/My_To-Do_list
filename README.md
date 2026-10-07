@@ -7,7 +7,7 @@ ZenTask is designed for developers and power-users who want an organized, attrac
 ---
   
 ##  Key Features 
-
+ 
 - ** Multi-Accent Themes**: Switch instantly between carefully chosen visual palettes:
   - **Sunset Glow (Default)**: Deep charcoal dark mode with glowing orange accents. 
   - **Honey Yellow**: Clean light mode featuring soft amber accents.
